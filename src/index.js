@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Carousel from './components/Carousel';
+import Slideshow from './components/Slideshow';
 import reportWebVitals from './reportWebVitals';
+
+const slideShow = Slideshow();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Carousel slides={slideShow}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
