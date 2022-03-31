@@ -4,8 +4,6 @@ import Carousel from './components/Carousel';
 
 it('should not error if no props passed in', () => {
   render(<Carousel/>);
-
-  
 });
 
 it('should show a slide when content is provided', () => {
