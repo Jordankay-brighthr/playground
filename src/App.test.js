@@ -74,6 +74,6 @@ it('should provide option to auto progress the slides', () => {
   })
 
   expect(screen.getByText('Slide 1')).toBeInTheDocument();
-  -~
+  
   jest.useRealTimers();
 });
