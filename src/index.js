@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Carousel from './components/Carousel';
-import Slideshow from './components/Slideshow';
+import Slideshow from './components/Carousel/Slideshow';
 import reportWebVitals from './reportWebVitals';
 
 const slideShow = Slideshow();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Carousel slides={slideShow}/>
+    <Carousel slides={slideShow} autoProgress/>
   </React.StrictMode>,
   document.getElementById('root')
 );
